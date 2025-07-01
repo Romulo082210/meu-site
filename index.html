@@ -2,45 +2,106 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Site</title>
+    <title>Site do Rômulo</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #333;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffc107;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         main {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #212529;
+            color: #ccc;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main h2 {
+                font-size: 1.5rem;
+            }
+
+            main p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Bem-vindo ao Meu Site</h1>
+        <h1>Bem-vindo ao Site do Rômulo</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
+
     <main>
-        <p> Site simples feito com HTML e CSS.</p>
+        <h2>Projeto GitHub </h2>
+        <p>Este é um exemplo de site criado com HTML e CSS.</p>
     </main>
+
     <footer>
-        <p>Desenvolvido por Rômulo</p>
+        <p>© 2025 Rômulo Santos.</p>
     </footer>
+
 </body>
 </html>
